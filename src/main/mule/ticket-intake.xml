@@ -55,7 +55,7 @@ output application/json
 			<http:headers><![CDATA[#[output application/java
 ---
 {
-	"api-key" : "EichzULfP2DN86DkizcOTiiu6SCRxTldEKiyWOnaVmcZ2BM1GzfQJQQJ99BFACHYHv6XJ3w3AAAAACOG7a0d"
+	"api-key" : "EichzULfP2DN86DkizcOTiiu6HYHv6XJ3w3AAAAACOG7a0d"
 }]]]></http:headers>
 		
 		   
