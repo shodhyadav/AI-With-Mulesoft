@@ -32,5 +32,3 @@ An intelligent MuleSoft-based ticketing assistant that automates ticket intake, 
 
 ---
 
-## 📂 Project Structure
-
