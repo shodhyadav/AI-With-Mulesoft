@@ -1,3 +1,4 @@
+📂 Note: This is a partial project release – shared for learning and architectural discussion only. Full production code is not open-sourced .
 # 🎫 AI Ticket Assistant (MuleSoft + AI Integration)
 
 An intelligent MuleSoft-based ticketing assistant that automates ticket intake, AI-based triage, routing, and notifications — designed for IT service management and support operations.
