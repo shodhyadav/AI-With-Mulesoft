@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="ticket-intake-test-suite.xml" />
+	<munit:before-test name="ticket-intake-test-suiteBefore_Test" doc:id="8917507a-61b8-4334-96f4-ff383b4d54d4" >
+	</munit:before-test>
+	<munit:test name="ticket-intake-test-suite" doc:id="524acab6-d86e-4b27-b09c-bfd8299ff6cb" description="Test">
+		<munit:behavior >
+			<munit-tools:mock-when doc:name="Mock when" doc:id="f8555dee-1792-46a5-a4b2-5c3db7aa7904" processor="http:request">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="POST" attributeName="method" />
+					<munit-tools:with-attribute whereValue="Azure AI Config" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="1df0e215-711c-491e-83f3-8d0e94a11d68" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="OpenRouter_Config" attributeName="config-ref" />
+					<munit-tools:with-attribute whereValue="/openai/deployments/gpt-4.1/chat/completions?api-version=2025-01-01-preview" attributeName="path" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#[{&#10;    "choices": [&#10;        {&#10;            "content_filter_results": {&#10;                "hate": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                },&#10;                "self_harm": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                },&#10;                "sexual": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                },&#10;                "violence": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                }&#10;            },&#10;            "finish_reason": "stop",&#10;            "index": 0,&#10;            "logprobs": null,&#10;            "message": {&#10;                "annotations": [],&#10;                "content": "[\n  {\n    \"summary\": \"You are encountering an error related to database configuration in MuleSoft.\",\n    \"category\": \"Database Configuration Error\",\n    \"recommendation\": \"Check your database connection settings (hostname, port, username, password, database name) in the MuleSoft configuration file. Ensure the JDBC driver is included in your project dependencies. Review the error message for specifics, and verify that the database server is accessible from your Mule runtime environment.\"\n  }\n]",&#10;                "refusal": null,&#10;                "role": "assistant"&#10;            }&#10;        }&#10;    ],&#10;    "created": 1750954174,&#10;    "id": "chatcmpl-BmjSImO3ptCM0dvLENb4vGTWwXotM",&#10;    "model": "gpt-4.1-2025-04-14",&#10;    "object": "chat.completion",&#10;    "prompt_filter_results": [&#10;        {&#10;            "prompt_index": 0,&#10;            "content_filter_results": {&#10;                "hate": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                },&#10;                "self_harm": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                },&#10;                "sexual": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                },&#10;                "violence": {&#10;                    "filtered": false,&#10;                    "severity": "safe"&#10;                }&#10;            }&#10;        }&#10;    ],&#10;    "system_fingerprint": "fp_07e970ab25",&#10;    "usage": {&#10;        "completion_tokens": 96,&#10;        "completion_tokens_details": {&#10;            "accepted_prediction_tokens": 0,&#10;            "audio_tokens": 0,&#10;            "reasoning_tokens": 0,&#10;            "rejected_prediction_tokens": 0&#10;        },&#10;        "prompt_tokens": 53,&#10;        "prompt_tokens_details": {&#10;            "audio_tokens": 0,&#10;            "cached_tokens": 0&#10;        },&#10;        "total_tokens": 149&#10;    }&#10;}]' mediaType="application/java" />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+			<munit-tools:mock-when doc:name="Mock when" doc:id="481284d1-3b1a-4acc-916d-c21d53639b73" processor="db:insert">
+				<munit-tools:with-attributes >
+					<munit-tools:with-attribute whereValue="Insert" attributeName="doc:name" />
+					<munit-tools:with-attribute whereValue="34443775-6b43-4fc9-a889-d6ac9b10e1e3" attributeName="doc:id" />
+					<munit-tools:with-attribute whereValue="Database_Config" attributeName="config-ref" />
+				</munit-tools:with-attributes>
+				<munit-tools:then-return >
+					<munit-tools:payload value='#["Coming from Database"]' />
+				</munit-tools:then-return>
+			</munit-tools:mock-when>
+		</munit:behavior>
+		<munit:execution >
+			<logger level="INFO" doc:name="Logger" doc:id="800f9c6c-eeca-4824-9680-27b9d6321ed9" message="#[payload]"/>
+			<munit:set-event doc:name="Set Event" doc:id="78b82b15-97e8-47a0-bec6-f35dac62aecd">
+				<munit:payload value='#[%dw 2.0 &#10;output application/json&#10;---&#10;{&#10;  "subject": "VPN not working",&#10;  "description": "I keep getting error in db config in mulesoft",&#10;  "userEmail": "alex@company.com"&#10;}]' encoding="UTF-8" />
+			</munit:set-event>
+			<flow-ref doc:name="Flow-ref to ticket-intake-Flow" doc:id="505b1222-0614-4edc-8b63-570809abd140" name="ticket-intake-Flow"/>
+			<munit-tools:store doc:name="Store" doc:id="ff2eaa61-0dc9-4690-9bdd-9e29ee6fbb8a" key="first" />
+			<munit-tools:store doc:name="Store" doc:id="7b367b3e-f2ac-45d6-bab4-198f7eb9cdb0" key="second">
+				<munit-tools:value ><![CDATA[#["Hello"]]]></munit-tools:value>
+			</munit-tools:store>
+		</munit:execution>
+		<munit:validation >
+			<munit-tools:retrieve doc:name="Retrieve" doc:id="6c012ca8-274b-49e8-bc5e-4fa63f3d54bc" key="second" target="first"/>
+			<logger level="INFO" doc:name="Logger" doc:id="fcd6e590-2ded-4eac-a047-eff05fb734d7" message="#[vars.first]"/>
+			<munit-tools:queue doc:name="Queue" doc:id="7dad1ff1-a9ab-479a-8573-ecd50ff5fba3" queueName="firstQueue">
+				<munit-tools:value ><![CDATA[#["First Queue Data"]]]></munit-tools:value>
+			</munit-tools:queue>
+			<munit-tools:queue doc:name="Queue" doc:id="58391746-e875-46b5-9868-dbcf044b807a" queueName="secondQueue">
+				<munit-tools:value ><![CDATA[#["second queue data"]]]></munit-tools:value>
+			</munit-tools:queue>
+			<munit-tools:dequeue doc:name="Dequeue" doc:id="6520e600-9e7c-471a-8060-6b5b49f2818b" queueName="firstQueue" target="firstQueue"/>
+			<logger level="INFO" doc:name="Logger" doc:id="858bfae5-2105-464d-9166-77456c9b8726" message="#[vars.firstQueue]"/>
+			<munit-tools:assert-that doc:name="Assert that" doc:id="b97c5b93-c570-4067-8018-915c399ff848" is="#[MunitTools::notNullValue()]" expression="#[payload]"/>
+		</munit:validation>
+	</munit:test>
+
+</mule>

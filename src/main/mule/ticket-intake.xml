@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:jms="http://www.mulesoft.org/schema/mule/jms" xmlns:os="http://www.mulesoft.org/schema/mule/os"
+	xmlns:db="http://www.mulesoft.org/schema/mule/db"
+	xmlns:batch="http://www.mulesoft.org/schema/mule/batch" xmlns:email="http://www.mulesoft.org/schema/mule/email" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/email http://www.mulesoft.org/schema/mule/email/current/mule-email.xsd
+http://www.mulesoft.org/schema/mule/batch http://www.mulesoft.org/schema/mule/batch/current/mule-batch.xsd
+http://www.mulesoft.org/schema/mule/db http://www.mulesoft.org/schema/mule/db/current/mule-db.xsd
+http://www.mulesoft.org/schema/mule/os http://www.mulesoft.org/schema/mule/os/current/mule-os.xsd
+http://www.mulesoft.org/schema/mule/jms http://www.mulesoft.org/schema/mule/jms/current/mule-jms.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="0c0aaecd-1777-40ec-b5b4-0c955aae5ed0" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<http:request-config name="OpenRouter_Config" doc:name="HTTP Request configuration" doc:id="fe9c6953-6cd0-4a7c-aa87-28f078df041d">
+		<http:request-connection protocol="HTTPS" host="shodh-mcdhl7fs-eastus2.cognitiveservices.azure.com" connectionIdleTimeout="60000"/>
+	</http:request-config>
+	<email:smtp-config name="Email_SMTP" doc:name="Email SMTP" doc:id="e4e20ee8-7314-4310-9ae1-0313e39f4db1" >
+		<email:smtp-connection host="smtp.gmail.com" port="587" user="shodhyadav7@gmail.com" password="kvpb gbjl ydey upve" />
+	</email:smtp-config>
+	<db:config name="Database_Config" doc:name="Database Config" doc:id="025d9cf8-c122-4e55-8cb5-cbd27df4163b" >
+		<db:my-sql-connection host="localhost" port="3306" user="root" password="3691209sN@" database="ai_mule_integration" />
+	</db:config>
+	<os:object-store name="ObjectStore_Config" doc:name="Object store" doc:id="365a7029-551f-4e87-ab6b-02a18aed8637" maxEntries="10000" entryTtl="30" entryTtlUnit="DAYS" />
+	<jms:config name="JMS_Config" doc:name="JMS Config" doc:id="89ba6575-5739-4a3d-b2f0-162fda61ddf2" >
+		<jms:active-mq-connection />
+		<jms:consumer-config ackMode="MANUAL" />
+		<jms:producer-config persistentDelivery="true" />
+	</jms:config>
+	<flow name="ticket-intake-Flow" doc:id="13d3ad7e-f095-4412-9d74-d14528ea3738" >
+		<http:listener doc:name="Listener" doc:id="1165031d-6508-496d-912d-3da4365865ae" config-ref="HTTP_Listener_config" path="/api/tickets" allowedMethods="POST"/>
+		<set-variable value="#[payload.description]" doc:name="Getting Error Details" doc:id="0805ae34-31fe-4625-8a89-f40eebcb6bfb" variableName="description"/>
+		<ee:transform doc:name="AI Prompt" doc:id="bbbdc94b-d326-4198-bfb5-d43b42fc8cd0" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+      messages: [
+        { role:"system", content: "You are a helpful support AI. Always respond in json with keys: summary, category, and recommendation.each data in different object block and wrap in an array" },
+        { role:"user", content:vars.description }
+      ],
+      max_completion_tokens: 800,
+      temperature: 1,
+      top_p: 1,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+      model: "gpt-4.1"
+    }]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<until-successful maxRetries="3" doc:name="Until Successful" doc:id="57a6e854-4793-4a97-a657-a2388c48fef0" millisBetweenRetries="10000">
+			<http:request method="POST" doc:name="Azure AI Config" doc:id="1df0e215-711c-491e-83f3-8d0e94a11d68" config-ref="OpenRouter_Config" path="/openai/deployments/gpt-4.1/chat/completions?api-version=2025-01-01-preview">
+			<http:headers><![CDATA[#[output application/java
+---
+{
+	"api-key" : "EichzULfP2DN86DkizcOTiiu6SCRxTldEKiyWOnaVmcZ2BM1GzfQJQQJ99BFACHYHv6XJ3w3AAAAACOG7a0d"
+}]]]></http:headers>
+		
+		   
+		</http:request>
+		</until-successful>
+		<logger level="DEBUG" doc:name="Logger" doc:id="34a82682-9adc-492a-a563-5d8e850279a3" message="#[payload]"/>
+		<ee:transform doc:name="AI Response" doc:id="5055b1f4-3ecc-465c-b518-5d6547367763" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+var rawString = payload.choices[0].message.content
+var result = read(rawString, "application/json")
+---
+{
+  summary: result[0].summary,
+  category: result[0].category,
+  recommendation: result[0].recommendation
+}
+]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<flow-ref doc:name="Flow Reference" doc:id="936af3dc-8345-42ce-a714-8ee1951c5d70" name="FlowDirection" />
+	</flow>
+	<flow name="FlowDirection" doc:id="7cf64559-6700-47b9-b58b-f9b327c78ccf" >
+		<ee:transform doc:name="Pretty Response" doc:id="d86e5223-bdfb-4800-bc27-d35c91b86336">
+						<ee:message>
+							<ee:set-payload><![CDATA[%dw 2.0
+output application/json
+---
+{
+  ticket_id: upper("TCKT-" ++ (now() as String {format: "yyyyMMddHHmmss"}) as String),
+  summary: payload.summary,
+  category: payload.category,
+  recommendation: payload.recommendation
+}]]></ee:set-payload>
+						</ee:message>
+					</ee:transform>
+		<scatter-gather doc:name="Transmitting Payload " doc:id="eb347f3c-dd37-4d32-952c-490fd26b42ed" >
+			<route >
+				<flow-ref doc:name="DB Path" doc:id="c09e50dc-0fbc-43bf-8b93-00c06b0ff6b2" name="DB-Inserntion-Flow"/>
+			</route>
+			<route >
+				<flow-ref doc:name="Object Store Path" doc:id="395cb78c-baa3-4ba2-9b0e-3c232f38507a" name="Store-Each-Ticket-Flow"/>
+			</route>
+			<route >
+				<flow-ref doc:name="JMS Path" doc:id="2aa23d25-13ad-4711-8e7a-84f3acfa89fd" name="JMS-Flow"/>
+			</route>
+		</scatter-gather>
+		<ee:transform doc:name="Transform Message" doc:id="5ef0ad1e-7847-4953-abb4-6d5cb3445d23" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload pluck $.payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="JMS-Flow" doc:id="d684223c-24f2-4332-8602-3a974c82d107" >
+		<try doc:name="Try" doc:id="65fe43f9-9201-4fcf-acb1-a715cf8c5ab2" >
+			<jms:publish doc:name="Publish" doc:id="b8f7d2d7-3594-4826-b49a-6b7c439a46ec" config-ref="JMS_Config" destination="ticket.queue" sendCorrelationId="ALWAYS" persistentDelivery="true">
+			<jms:message correlationId="12345" />
+		</jms:publish>
+			<error-handler >
+				<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="218ba1b0-77d0-4f80-aa2e-017a79614aec" >
+					<logger level="INFO" doc:name="Logger" doc:id="28f58cf7-7e39-4f13-98bb-3a21671ad749" message='#[""]'/>
+				</on-error-continue>
+			</error-handler>
+		</try>
+		<logger level="INFO" doc:name="Logger" doc:id="f2f83a53-52bf-4c39-9956-f99724708cf7" message="#[payload]"/>
+	</flow>
+	<flow name="JMS-Reciever-Flow" doc:id="ec408f1f-6b75-49ae-8e05-6055b44c5f6f" >
+		<jms:listener doc:name="On New Message" doc:id="c72ba3b5-e489-498a-8748-7334b7de490c" config-ref="JMS_Config" destination="ticket.queue" ackMode="AUTO">
+			<jms:consumer-type >
+				<jms:queue-consumer />
+			</jms:consumer-type>
+		</jms:listener>
+		<logger level="INFO" doc:name="Logger" doc:id="71a5f69d-3ff0-4892-ac54-e56699719d65" message="#[payload]" />
+		<jms:recover-session doc:name="Recover session" doc:id="e38cdb8a-ec13-4561-aeeb-13c5744ad42f" ackId="1234"/>
+		<error-handler >
+			<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="f0648c91-4227-48a7-8907-f3d64b2f3cdb" type="ANY">
+				<logger level="INFO" doc:name="Logger" doc:id="e0645e2e-996d-4d43-a78c-3ae18f0a254c" message='#["Some ERROR occurred"]'/>
+			</on-error-continue>
+		</error-handler>
+	</flow>
+	<flow name="DB-Inserntion-Flow" doc:id="f1f9f003-4d74-4ab9-81e3-954027d991f4" >
+		<try doc:name="Try" doc:id="3dac84a7-e859-4c44-aa73-6e682d219c51" >
+			<db:insert doc:name="Insert" doc:id="34443775-6b43-4fc9-a889-d6ac9b10e1e3" config-ref="Database_Config">
+						<db:sql><![CDATA[ INSERT INTO tickets (ticket_id, summary, category, recommendation)
+        VALUES (:ticket_id, :summary, :category, :recommendation)]]></db:sql>
+						<db:input-parameters><![CDATA[#[{
+          ticket_id: payload.ticket_id,
+          summary: payload.summary,
+          category: payload.category,
+          recommendation: payload.recommendation
+        }]]]></db:input-parameters>
+					</db:insert>
+			<error-handler >
+				<on-error-continue enableNotifications="true" logException="true" doc:name="On Error Continue" doc:id="0d3a6731-e895-4223-9e3c-a67710a7289c" >
+					<logger level="INFO" doc:name="Logger" doc:id="941bcab8-d52b-4069-b8e4-99c7778be2dd" message='#["Some error is occured in DB insertion part"]'/>
+				</on-error-continue>
+			</error-handler>
+		</try>
+		<ee:transform doc:name="Transform Message" doc:id="1f0f641f-ad40-445c-9ad5-dfa025be217a" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+	"status":"Insertion Successsful"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="Store-Each-Ticket-Flow" doc:id="dd25e80b-3621-439d-81e3-11cc6da6960c" >
+		<set-variable value="#[payload.ticket_id]" doc:name="Set Variable" doc:id="5a22cfd1-d831-47e5-b715-14439ef632be" variableName="ticket_id"/>
+		<os:store doc:name="Store" doc:id="cd5710b9-2e68-410b-9ab3-9ec3cefae410" objectStore="ObjectStore_Config" key="#[vars.ticket_id]"/>
+		<logger level="INFO" doc:name="Logger" doc:id="0afbf668-52c2-488b-8c23-f1a5def9ae94" message='#["Archived Ticket #[vars.ticket_id] successfully"]'/>
+		<os:retrieve-all doc:name="Retrieve all" doc:id="2329df56-2b2d-48e2-b9f1-3fca9735a240" objectStore="ObjectStore_Config"/>
+	</flow>
+</mule>

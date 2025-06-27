@@ -1,0 +1,719 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.mycompany:cortexassist >---------------------
+[INFO] Building cortexassist 1.0.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------[ mule-application ]--------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean-1) @ cortexassist ---
+[INFO] Deleting /Users/shodhyadav/git/repository/cortexassist/target
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:clean (default-clean) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:validate (default-validate) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:initialize (default-initialize) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:generate-sources (default-generate-sources) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:process-sources (default-process-sources) @ cortexassist ---
+[INFO] About to fetch required dependencies for artifact: com.mycompany:cortexassist:pom:1.0.0-SNAPSHOT. This may take a while...
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cortexassist ---
+[INFO] Copying 7 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- mule:4.3.0:process-resources (default-process-resources) @ cortexassist ---
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ cortexassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- mule:4.3.0:compile (default-compile) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:process-classes (default-process-classes) @ cortexassist ---
+[INFO] About to fetch required dependencies for artifact: 30c707a0-52df-11f0-9f78-960435950131:30c707a0-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 31241bc0-52df-11f0-9f78-960435950131:31241bc0-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 3135cf00-52df-11f0-9f78-960435950131:3135cf00-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 31516d50-52df-11f0-9f78-960435950131:31516d50-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 3178a460-52df-11f0-9f78-960435950131:3178a460-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 31896d40-52df-11f0-9f78-960435950131:31896d40-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] Internal plugin library 'org.mule.runtime:mule-extensions-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-java' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 31a90330-52df-11f0-9f78-960435950131:31a90330-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-commons' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[INFO] About to fetch required dependencies for artifact: 31d62db0-52df-11f0-9f78-960435950131:31d62db0-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-commons' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 3214bd50-52df-11f0-9f78-960435950131:3214bd50-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 3233b700-52df-11f0-9f78-960435950131:3233b700-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 32460680-52df-11f0-9f78-960435950131:32460680-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 325dfb50-52df-11f0-9f78-960435950131:325dfb50-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 3280eca0-52df-11f0-9f78-960435950131:3280eca0-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 3291dc90-52df-11f0-9f78-960435950131:3291dc90-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] Internal plugin library 'org.mule.runtime:mule-extensions-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-java' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector-1.9.7-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] About to fetch required dependencies for artifact: 32aeb360-52df-11f0-9f78-960435950131:32aeb360-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-commons' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[INFO] About to fetch required dependencies for artifact: 32d96ce0-52df-11f0-9f78-960435950131:32d96ce0-52df-11f0-9f78-960435950131:pom:4.7.2. This may take a while...
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-api' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-embedded-commons' is a Mule Runtime dependency. It will not be used by 'munit-runner-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] Internal plugin library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-tools-3.3.0-mule-plugin.jar' in order to avoid classloading issues. Please consider removing it, or at least not putting it with 'compile' scope.
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[WARNING] A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+[INFO] 
+[INFO] --- mule:4.3.0:generate-test-sources (default-generate-test-sources) @ cortexassist ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cortexassist ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- mule:4.3.0:generate-test-resources (default-generate-test-resources) @ cortexassist ---
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ cortexassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- mule:4.3.0:test-compile (default-test-compile) @ cortexassist ---
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ cortexassist ---
+[INFO] 
+[INFO] --- munit:3.3.0:test (test) @ cortexassist ---
+[INFO] Acquiring dynamic ports...
+[INFO] Dynamic port definition [DONE]
+[INFO] About to fetch required dependencies for artifact: com.mycompany:cortexassist:pom:1.0.0-SNAPSHOT. This may take a while...
+[INFO] Copying files to /Users/shodhyadav/git/repository/cortexassist/target/munitworkingdir-394765300280125/cortexassist
+[INFO] Running MULE_EE with version 4.8.0
+[INFO] --add-opens: java.base/java.lang.invoke=org.mule.runtime.jpms.utils
+[INFO] --add-opens: java.base/java.lang.reflect=org.mule.runtime.jpms.utils
+[INFO] --add-opens: java.base/java.lang=org.mule.runtime.jpms.utils
+INFO  2025-06-27 04:15:05,875 [main] org.mule.munit.remote.RemoteRunner: Run Started
+
+
+INFO  2025-06-27 04:15:05,881 [main] org.mule.munit.remote.RemoteRunner: Mule container is starting, it could take a few minutes
+SLF4J(E): A service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.apache.logging.slf4j.SLF4JServiceProvider not a subtype
+SLF4J(I): Connected with provider of type [org.apache.logging.slf4j.SLF4JServiceProvider]
+INFO  2025-06-27 04:15:07,092 [main] org.mule.munit.remote.coverage.CoverageManager: Starting coverage server
+INFO  2025-06-27 04:15:07,093 [pool-3-thread-1] org.mule.munit.remote.coverage.server.CoverageServer: Coverage Server starting...
+INFO  2025-06-27 04:15:07,093 [pool-3-thread-1] org.mule.munit.remote.coverage.server.CoverageServer: Waiting for coverage client connection in port [50058]...
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.mule.runtime.module.deployment.internal.MuleDeploymentService (file:/Users/shodhyadav/.m2/repository/org/mule/runtime/mule-module-deployment/4.8.0/mule-module-deployment-4.8.0.jar) to field java.lang.reflect.Field.modifiers
+WARNING: Please consider reporting this to the maintainers of org.mule.runtime.module.deployment.internal.MuleDeploymentService
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+INFO  2025-06-27 04:15:08,642 [Embedded] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+*                                                                    *
+*                         (((((((((((((((((((                        *
+*                     (((((                 ((((#                    *
+*                  &(((                        *(((                  *
+*                &(((                             (((                *
+*               (((     (((%               (((#     (((              *
+*              ((     (((((((             (((((((    (((             *
+*             ((     (((((((((           (((((((((     ((            *
+*            ((    #(((((((((((        #(((((((((((    (((           *
+*           #((    ((((((((((((((     ((((((((((((((    ((           *
+*           ((    ((((((  /(((((((   (((((((  /((((((    ((          *
+*           ((    ((((((    (((((((&(((((((    ((((((    ((          *
+*           ((    (((((      ((((((((((((*     ((((((    ((          *
+*           ((    ((((((      *(((((((((       ((((((    ((          *
+*           ((    ((((((        (((((((        ((((((   (((          *
+*            ((    ((((((                     ((((((    ((           *
+*            ((#    ((((((#                 (((((((    ((            *
+*             ((#    ((((((((             ((((((((    (((            *
+*              (((    (((((((              (((((     ((.             *
+*                ((      (((               (((     #((               *
+*                 /((                            (((                 *
+*                    (((                      &(((                   *
+*                      *((((&             &((((                      *
+*                           ((((((((((((((/                          *
+*                                                                    *
+*    ___  ___      _        ______            _   _                  *
+*    |  \/  |     | |       | ___ \          | | (_)                 *
+*    | .  . |_   _| | ___   | |_/ /   _ _ __ | |_ _ _ __ ___   ___   *
+*    | |\/| | | | | |/ _ \  |    / | | | '_ \| __| | '_ ` _ \ / _ \  *
+*    | |  | | |_| | |  __/  | |\ \ |_| | | | | |_| | | | | | |  __/  *
+*    \_|  |_/\__,_|_|\___|  \_| \_\__,_|_| |_|\__|_|_| |_| |_|\___|  *
+*                                                                    *
+*                                                                    *
+* Mule Runtime and Integration Platform                              *
+* Version: 4.8.0 Build: 6036be68                                     *
+* MuleSoft, Inc.                                                     *
+* For more information go to                                         *
+* https://www.mulesoft.com/platform/soa/mule-esb-enterprise          *
+*                                                                    *
+* Server started: 27/06/25, 4:15 AM                                  *
+* JDK: 11.0.27 (mixed mode)                                          *
+* JDK properties:                                                    *
+*  - java.vendor = Homebrew                                          *
+*  - java.vm.name = OpenJDK 64-Bit Server VM                         *
+* - java.home =                                                      *
+* /opt/homebrew/Cellar/openjdk@11/11.0.27/libexec/openjdk.jdk/Conten *
+* ts/Home                                                            *
+* OS: Mac OS X (15.5, aarch64)                                       *
+* Host: Shodhs-MacBook-Air.local (127.0.0.1)                         *
+* Mule services:                                                     *
+*  - mule-service-scheduler-1.8.0                                    *
+*  - mule-service-weave-ee-2.8.0                                     *
+*  - mule-service-soap-1.8.0                                         *
+*  - mule-service-http-ee-1.11.0                                     *
+*  - api-gateway-contract-service-1.4.0                              *
+*  - api-gateway-events-collector-service-1.4.0                      *
+*  - mule-service-oauth-ee-1.5.0                                     *
+* Mule server plugins:                                               *
+*  - munit-coverage-plugin-3.3.0-mule-server-plugin.jar              *
+* Mule system properties:                                            *
+*  - mule.testingMode = true                                         *
+* - mule.home =                                                      *
+* /Users/shodhyadav/git/repository/cortexassist/target/munitworkingd *
+* ir-394765300280125/container                                       *
+*  - mule.mode.embedded = true                                       *
+**********************************************************************
+INFO  2025-06-27 04:15:08,747 [Embedded] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Cluster configuration                                              *
+*                                                                    *
+* Cluster mode disabled                                              *
+**********************************************************************
+WARN  2025-06-27 04:15:08,756 [Embedded] com.mulesoft.mule.runtime.plugin.discoverer.FileSystemPluginDiscoverer: Cannot unzip plugin file 'munit-coverage-plugin-3.3.0-mule-server-plugin.jar'
+WARN  2025-06-27 04:15:08,757 [Embedded] com.mulesoft.mule.runtime.plugin.discoverer.FileSystemPluginDiscoverer: Cannot delete plugin file 'munit-coverage-plugin-3.3.0-mule-server-plugin.jar'. Plugin will be overwritten on restart
+WARN  2025-06-27 04:15:08,761 [Embedded] com.mulesoft.mule.runtime.plugin.discoverer.FileSystemPluginDiscoverer: Cannot load descriptor for plugin 'munit-coverage-plugin-3.3.0-mule-server-plugin': Artifact descriptor does not exists: /Users/shodhyadav/git/repository/cortexassist/target/munitworkingdir-394765300280125/container/server-plugins/munit-coverage-plugin-3.3.0-mule-server-plugin/META-INF/mule-artifact/mule-artifact.json (org.mule.runtime.module.artifact.api.descriptor.ArtifactDescriptorCreateException)
+INFO  2025-06-27 04:15:08,770 [Embedded] org.mule.munit.plugins.coverage.CoverageServerPlugin: Initialising coverage plugin...
+INFO  2025-06-27 04:15:08,843 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New domain 'default'                                                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:08,843 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing domain 'default'                                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:09,121 [Embedded] org.mule.runtime.api.metadata.AbstractDataTypeBuilderFactory: Loaded AbstractDataTypeBuilderFactory implementation 'org.mule.runtime.core.api.metadata.DefaultDataTypeBuilderFactory' from classloader 'java.net.URLClassLoader@4a9a878'
+INFO  2025-06-27 04:15:09,136 [Embedded] org.mule.runtime.module.deployment.internal.processor.FallbackArtifactConfigurationProcessor: Serialized AST not avaliable for artifact 'default'
+INFO  2025-06-27 04:15:09,170 [Embedded] org.mule.service.scheduler.internal.config.ContainerThreadPoolsConfig: No thread pools config file found. Using default values.
+INFO  2025-06-27 04:15:09,217 [Embedded] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Started DefaultSchedulerService                                    *
+*                                                                    *
+* Resolved configuration values:                                     *
+*                                                                    *
+* Pooling strategy:       UBER                                       *
+* gracefulShutdownTimeout:       15000 ms                            *
+* uber.threadPool.maxSize:         369                               *
+* uber.threadPool.threadKeepAlive: 30000 ms                          *
+*                                                                    *
+* These can be modified by editing 'conf/scheduler-pools.conf'       *
+**********************************************************************
+INFO  2025-06-27 04:15:09,224 [ArtifactDeployer.start.01] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Domain: default                                                    *
+* OS encoding: UTF-8, Mule encoding: UTF-8                           *
+*                                                                    *
+**********************************************************************
+INFO  2025-06-27 04:15:09,225 [ArtifactDeployer.start.01] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Started domain 'default'                                           *
+**********************************************************************
+INFO  2025-06-27 04:15:09,227 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Mule is up and kicking (every 5000ms)                                        +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:09,228 [Embedded] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+*              - - + DOMAIN + - -               * - - + STATUS + - - *
+**********************************************************************
+* default                                       * DEPLOYED           *
+**********************************************************************
+
+INFO  2025-06-27 04:15:09,232 [main] org.mule.munit.remote.container.ContainerSuiteRunDispatcher: Suite will run with MMV 4.8.0
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-extensions-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-java' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,293 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-extensions-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-java' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,294 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'mule-jms-connector' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,296 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,297 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-tools' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,301 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-embedded-api' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-embedded-commons' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-api' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-metadata-model-api' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-message-metadata-model' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-artifact-declaration-persistence' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:api-annotations' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-embedded-api' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,302 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.AbstractArtifactClassLoaderConfigurationAssembler: Shared library 'org.mule.runtime:mule-embedded-commons' is a Mule Runtime dependency. It will not be used by 'munit-runner' in order to avoid classloading issues. Please consider removing it, or at least not putting it as a sharedLibrary.
+WARN  2025-06-27 04:15:09,310 [Embedded] org.mule.runtime.module.artifact.activation.internal.classloader.DefaultArtifactClassLoaderResolver: Exported packages from artifact 'cortexassist' are provided by parent class loader: [javax.annotation, org.slf4j, org.slf4j.spi, javax.jms, org.slf4j.event, org.slf4j.helpers]
+INFO  2025-06-27 04:15:09,347 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ New app 'cortexassist'                                                       +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:09,347 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Initializing app 'cortexassist'                                              +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+WARN  2025-06-27 04:15:09,544 [ForkJoinPool.commonPool-worker-7] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,554 [ForkJoinPool.commonPool-worker-3] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,558 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,562 [ForkJoinPool.commonPool-worker-3] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,565 [ForkJoinPool.commonPool-worker-3] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,567 [ForkJoinPool.commonPool-worker-3] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,569 [ForkJoinPool.commonPool-worker-3] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,571 [ForkJoinPool.commonPool-worker-3] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,573 [ForkJoinPool.commonPool-worker-3] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,577 [ForkJoinPool.commonPool-worker-5] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,581 [ForkJoinPool.commonPool-worker-7] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,581 [ForkJoinPool.commonPool-worker-7] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,588 [ForkJoinPool.commonPool-worker-15] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,590 [ForkJoinPool.commonPool-worker-15] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,610 [ForkJoinPool.commonPool-worker-5] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,615 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,617 [ForkJoinPool.commonPool-worker-5] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,627 [ForkJoinPool.commonPool-worker-5] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,638 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,639 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,640 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,646 [ForkJoinPool.commonPool-worker-5] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,647 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,647 [ForkJoinPool.commonPool-worker-5] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,647 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,648 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,938 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,940 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,941 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,942 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,942 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,942 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,943 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,947 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,947 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,948 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,949 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,949 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,950 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,955 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,957 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,958 [ForkJoinPool.commonPool-worker-13] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,968 [ForkJoinPool.commonPool-worker-15] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+WARN  2025-06-27 04:15:09,971 [ForkJoinPool.commonPool-worker-15] org.mule.runtime.module.extension.internal.loader.utils.JavaMetadataKeyIdModelParserUtils: A Keys Resolver is being defined without defining an Output Resolver, Input Resolver nor Attributes Resolver
+INFO  2025-06-27 04:15:10,898 [Embedded] org.mule.runtime.api.el.AbstractBindingContextBuilderFactory: Loaded BindingContextBuilderFactory implementation 'org.mule.runtime.core.api.el.DefaultBindingContextBuilderFactory' from classloader 'java.net.URLClassLoader@4a9a878'
+WARN  2025-06-27 04:15:10,903 [Embedded] org.mule.runtime.core.internal.el.DefaultBindingContextBuilder$BindingContextImplementation: Two modules with namespace 'Munit' were found in a binding context. Set log level to DEBUG for details
+INFO  2025-06-27 04:15:11,787 [ArtifactDeployer.start.01] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Starting app 'cortexassist'                                                  +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:11,805 [ArtifactDeployer.start.01] org.mule.runtime.api.message.AbstractMuleMessageBuilderFactory: Loaded MuleMessageBuilderFactory implementation 'org.mule.runtime.core.internal.message.DefaultMessageBuilderFactory' from classloader 'java.net.URLClassLoader@4a9a878'
+INFO  2025-06-27 04:15:11,811 [ArtifactDeployer.start.01] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Application: cortexassist                                          *
+* OS encoding: UTF-8, Mule encoding: UTF-8                           *
+*                                                                    *
+**********************************************************************
+INFO  2025-06-27 04:15:11,812 [munit.01] org.mule.munit.runner.remote.api.server.RunnerServer: Waiting for client connection 
+INFO  2025-06-27 04:15:11,812 [ArtifactDeployer.start.01] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Started app 'cortexassist'                                         *
+* Application plugins:                                               *
+*  - Database : 1.14.13                                              *
+*  - Email : 1.7.3                                                   *
+*  - JMS : 1.9.7                                                     *
+*  - MUnit : 3.3.0                                                   *
+*  - MUnit Tools : 3.3.0                                             *
+*  - ObjectStore : 1.2.2                                             *
+*  - Sockets : 1.2.5                                                 *
+*  - HTTP : 1.10.3                                                   *
+* Application libraries:                                             *
+*  - mysql-connector-java-8.0.30.jar                                 *
+*  - protobuf-java-3.19.4.jar                                        *
+*  - activemq-client-5.15.16.jar                                     *
+*  - slf4j-api-1.7.32.jar                                            *
+*  - geronimo-jms_1.1_spec-1.1.1.jar                                 *
+*  - hawtbuf-1.11.jar                                                *
+*  - geronimo-j2ee-management_1.1_spec-1.0.1.jar                     *
+*  - activemq-broker-5.15.16.jar                                     *
+*  - activemq-openwire-legacy-5.15.16.jar                            *
+*  - guava-28.2-jre.jar                                              *
+*  - failureaccess-1.0.1.jar                                         *
+*  - listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar  *
+*  - jsr305-3.0.2.jar                                                *
+*  - checker-qual-2.10.0.jar                                         *
+*  - error_prone_annotations-2.3.4.jar                               *
+*  - j2objc-annotations-1.3.jar                                      *
+*  - jackson-databind-2.9.10.8.jar                                   *
+*  - jackson-annotations-2.9.10.jar                                  *
+*  - jackson-core-2.9.10.jar                                         *
+*  - activemq-kahadb-store-5.15.16.jar                               *
+*  - activemq-protobuf-1.1.jar                                       *
+*  - commons-net-3.8.0.jar                                           *
+*  - assertions-1.2.1.jar                                            *
+*  - wlang-2.5.0-20221129.jar                                        *
+*  - scala-library-2.12.10.jar                                       *
+**********************************************************************
+INFO  2025-06-27 04:15:11,819 [munit.01] org.mule.munit.runner.remote.api.server.RunnerServer: Client connection received from localhost - true
+WARN  2025-06-27 04:15:14,009 [munit.01] org.mule.runtime.config.internal.dsl.spring.ComponentConfigurationBuilder: Parameter ignore from extension munit has a defaultValue configured in the componentBuildingDefinition but not in the extensionModel.
+WARN  2025-06-27 04:15:14,107 [munit.01] org.mule.runtime.module.tls.internal.socket.TlsProperties: File tls-default.conf not found, using default configuration.
+INFO  2025-06-27 04:15:14,107 [munit.01] org.mule.runtime.api.tls.AbstractTlsContextFactoryBuilderFactory: Loaded TlsContextFactoryBuilderFactory implementation 'org.mule.runtime.module.tls.api.DefaultTlsContextFactoryBuilderFactory' from classloader 'java.net.URLClassLoader@4a9a878'
+INFO  2025-06-27 04:15:14,606 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-JMS_Config
+INFO  2025-06-27 04:15:14,658 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+INFO  2025-06-27 04:15:14,700 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: JMS-Flow
+INFO  2025-06-27 04:15:14,820 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: Store-Each-Ticket-Flow
+INFO  2025-06-27 04:15:14,854 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: DB-Inserntion-Flow
+INFO  2025-06-27 04:15:14,876 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-OpenRouter_Config
+INFO  2025-06-27 04:15:14,879 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: FlowDirection
+INFO  2025-06-27 04:15:14,926 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Initialising Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2025-06-27 04:15:15,026 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Initialising flow: ticket-intake-Flow
+INFO  2025-06-27 04:15:15,040 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Initialising Bean: listener
+Jun 27, 2025 4:15:15 AM org.mule.weave.v2.el.WeaveScriptingParser $anonfun$parseWithCache$2
+WARNING: Import directive `dw::core::Objects` is not being used. at WeaveLocation([index: 296, line: 12, column: 1],[index: 342, line: 12, column: 47],dw::util::Diff)
+INFO  2025-06-27 04:15:15,207 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-JMS_Config
+INFO  2025-06-27 04:15:15,208 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+INFO  2025-06-27 04:15:15,209 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: JMS-Flow
+INFO  2025-06-27 04:15:15,311 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: Store-Each-Ticket-Flow
+INFO  2025-06-27 04:15:15,316 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: DB-Inserntion-Flow
+INFO  2025-06-27 04:15:15,323 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-OpenRouter_Config
+INFO  2025-06-27 04:15:15,323 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: FlowDirection
+INFO  2025-06-27 04:15:15,331 [munit.01] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Starting Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2025-06-27 04:15:15,344 [munit.01] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Starting flow: ticket-intake-Flow
+INFO  2025-06-27 04:15:15,362 [munit.01] org.mule.runtime.core.internal.construct.AbstractFlowConstruct: Not starting source for 'ticket-intake-Flow' because of org.mule.munit.runner.component.state.MunitComponentInitialStateManager@f802a07
+================================================================================
+=== Running suite: ticket-intake-test-suite.xml                              ===
+================================================================================
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Running test: ticket-intake-test-suite - Test                                +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+INFO  2025-06-27 04:15:15,431 [[MuleRuntime].uber.03: [cortexassist].execution.CPU_LITE @60a87537] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: 
+INFO  2025-06-27 04:15:15,532 [[MuleRuntime].uber.06: [cortexassist].Store-Each-Ticket-Flow.BLOCKING @307166df] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: Archived Ticket "TCKT-20250627041515" successfully
+INFO  2025-06-27 04:15:15,552 [Thread-1] org.apache.activemq.broker.BrokerService: Using Persistence Adapter: MemoryPersistenceAdapter
+INFO  2025-06-27 04:15:15,676 [Thread-1] org.apache.activemq.broker.BrokerService: Apache ActiveMQ 5.15.16 (localhost, ID:Shodhs-MacBook-Air.local-57408-1750977915557-0:1) is starting
+INFO  2025-06-27 04:15:15,677 [Thread-1] org.apache.activemq.broker.BrokerService: Apache ActiveMQ 5.15.16 (localhost, ID:Shodhs-MacBook-Air.local-57408-1750977915557-0:1) started
+INFO  2025-06-27 04:15:15,677 [Thread-1] org.apache.activemq.broker.BrokerService: For help or more information please see: http://activemq.apache.org
+INFO  2025-06-27 04:15:15,686 [Thread-1] org.apache.activemq.broker.TransportConnector: Connector vm://localhost started
+INFO  2025-06-27 04:15:15,729 [[MuleRuntime].uber.06: [cortexassist].JMS-Flow.CPU_LITE @1260eca7] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: {
+  "ticket_id": "TCKT-20250627041515",
+  "summary": "You are encountering an error related to database configuration in MuleSoft.",
+  "category": "Database Configuration Error",
+  "recommendation": "Check your database connection settings (hostname, port, username, password, database name) in the MuleSoft configuration file. Ensure the JDBC driver is included in your project dependencies. Review the error message for specifics, and verify that the database server is accessible from your Mule runtime environment."
+}
+INFO  2025-06-27 04:15:15,755 [[MuleRuntime].uber.05: [cortexassist].validation.CPU_LITE @7e156ea9] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: Hello
+INFO  2025-06-27 04:15:15,762 [[MuleRuntime].uber.05: [cortexassist].validation.CPU_LITE @7e156ea9] org.mule.runtime.core.internal.processor.LoggerMessageProcessor: First Queue Data
+
+
+INFO  2025-06-27 04:15:15,787 [munit.01] org.mule.munit.runner.model.Suite: SUCCESS - test: ticket-intake-test-suite - Time elapsed: 0.42 sec
+================================================================================
+= Tests run: 1 - Failed: 0 - Errors: 0 - Skipped: 0 - Time elapsed: 0.42 sec   =
+================================================================================
+INFO  2025-06-27 04:15:15,787 [munit.01] org.mule.munit.runner.remote.api.server.RunnerServer: Waiting for client connection 
+
+
+INFO  2025-06-27 04:15:15,788 [Embedded] org.mule.runtime.module.deployment.internal.DefaultArchiveDeployer: ================== Request to Undeploy Artifact: cortexassist
+INFO  2025-06-27 04:15:15,813 [pool-3-thread-1] org.mule.munit.remote.coverage.server.CoverageServer: Coverage client connection received from localhost - true
+INFO  2025-06-27 04:15:15,815 [pool-3-thread-1] org.mule.munit.remote.coverage.server.CoverageServer: Coverage client connection received from localhost - true
+INFO  2025-06-27 04:15:15,815 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping application 'cortexassist'                                          +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:15,816 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: ticket-intake-Flow
+INFO  2025-06-27 04:15:15,816 [Embedded] org.mule.runtime.core.internal.construct.AbstractFlowConstruct: Not stopping source for 'ticket-intake-Flow', it was not started because of org.mule.munit.runner.component.state.MunitComponentInitialStateManager@f802a07
+INFO  2025-06-27 04:15:15,818 [pool-8-thread-1] org.mule.munit.remote.coverage.CoverageManager: accumulating covered locations
+INFO  2025-06-27 04:15:15,818 [pool-9-thread-1] org.mule.munit.remote.coverage.CoverageManager: accumulating covered locations
+INFO  2025-06-27 04:15:15,821 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: FlowDirection
+INFO  2025-06-27 04:15:15,821 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: JMS-Flow
+INFO  2025-06-27 04:15:15,822 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: DB-Inserntion-Flow
+INFO  2025-06-27 04:15:15,822 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Stopping flow: Store-Each-Ticket-Flow
+INFO  2025-06-27 04:15:15,823 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2025-06-27 04:15:15,831 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-OpenRouter_Config
+INFO  2025-06-27 04:15:15,832 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+INFO  2025-06-27 04:15:15,832 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Stopping Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-JMS_Config
+INFO  2025-06-27 04:15:15,834 [Embedded] org.apache.activemq.broker.TransportConnector: Connector vm://localhost stopped
+INFO  2025-06-27 04:15:15,834 [Embedded] org.apache.activemq.broker.BrokerService: Apache ActiveMQ 5.15.16 (localhost, ID:Shodhs-MacBook-Air.local-57408-1750977915557-0:1) is shutting down
+INFO  2025-06-27 04:15:15,837 [Embedded] org.apache.activemq.broker.BrokerService: Apache ActiveMQ 5.15.16 (localhost, ID:Shodhs-MacBook-Air.local-57408-1750977915557-0:1) uptime 0.287 seconds
+INFO  2025-06-27 04:15:15,837 [Embedded] org.apache.activemq.broker.BrokerService: Apache ActiveMQ 5.15.16 (localhost, ID:Shodhs-MacBook-Air.local-57408-1750977915557-0:1) is shutdown
+INFO  2025-06-27 04:15:15,840 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing application 'cortexassist'                                         +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:15,840 [Embedded] org.mule.runtime.core.internal.logging: Stopping app 'cortexassist' with no mule context
+INFO  2025-06-27 04:15:15,876 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-HTTP_Listener_config
+INFO  2025-06-27 04:15:15,877 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-OpenRouter_Config
+INFO  2025-06-27 04:15:15,877 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-Database_Config
+INFO  2025-06-27 04:15:15,877 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Disposing Bean: org.mule.runtime.module.extension.internal.runtime.config.ConfigurationProviderToolingAdapter-JMS_Config
+INFO  2025-06-27 04:15:15,932 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: FlowDirection
+INFO  2025-06-27 04:15:15,933 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: JMS-Flow
+INFO  2025-06-27 04:15:15,933 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: DB-Inserntion-Flow
+INFO  2025-06-27 04:15:15,934 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: Store-Each-Ticket-Flow
+INFO  2025-06-27 04:15:15,934 [Embedded] org.mule.runtime.core.internal.construct.FlowConstructLifecycleManager: Disposing flow: ticket-intake-Flow
+INFO  2025-06-27 04:15:15,934 [Embedded] org.mule.runtime.core.internal.lifecycle.AbstractLifecycleManager: Disposing Bean: listener
+ERROR 2025-06-27 04:15:28,192 [Embedded] org.mule.service.scheduler.internal.threads.SchedulerThreadPools: Unable to destroy ThreadGroup 'munit' of Scheduler 'munit @37440432' (java.lang.IllegalThreadStateException). Remaining threads in the group are:
+	* mysql-cj-abandoned-connection-cleanup
+
+INFO  2025-06-27 04:15:28,232 [Embedded] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Application "cortexassist" shut down normally on: 27/06/25, 4:15   *
+* AM                                                                 *
+* Up for: 0 days, 0 hours, 0 mins, 16.444 sec                        *
+**********************************************************************
+INFO  2025-06-27 04:15:28,354 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Undeployed artifact 'cortexassist'                                           +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:28,355 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Stopping domain 'default'                                                    +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:28,355 [Embedded] org.mule.runtime.core.internal.logging: 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ Disposing domain 'default'                                                   +
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+INFO  2025-06-27 04:15:28,355 [Embedded] org.mule.runtime.core.internal.logging: Stopping domain 'default' with no mule context
+INFO  2025-06-27 04:15:28,356 [Embedded] org.mule.runtime.core.internal.logging: 
+**********************************************************************
+* Domain "default" shut down normally on: 27/06/25, 4:15 AM          *
+* Up for: 0 days, 0 hours, 0 mins, 19.138 sec                        *
+**********************************************************************
+INFO  2025-06-27 04:15:28,528 [Embedded] org.mule.service.scheduler.internal.service.DefaultSchedulerService: Stopping DefaultSchedulerService...
+INFO  2025-06-27 04:15:28,846 [Embedded] org.mule.service.scheduler.internal.service.DefaultSchedulerService: Stopped org.mule.service.scheduler.internal.service.DefaultSchedulerService$1@6a7a3557
+INFO  2025-06-27 04:15:29,875 [main] org.mule.munit.remote.coverage.CoverageManager: Shutting down coverage server
+INFO  2025-06-27 04:15:29,876 [main] org.mule.munit.remote.coverage.CoverageManager: Calculating application coverage
+
+
+
+
+INFO  2025-06-27 04:15:29,885 [main] org.mule.munit.remote.RemoteRunner: Done
+[INFO] ===============================================================================
+[INFO] MUnit Coverage Summary
+[INFO] ===============================================================================
+[INFO]  * Resources: 1 - Flows: 6 - Processors: 24
+[INFO]  * Application Coverage: 79.17%
+[INFO] ====================================================================================
+[INFO] MUnit Run Summary - Product: MULE_EE, Version: 4.8.0
+[INFO] ====================================================================================
+[INFO]  >> ticket-intake-test-suite.xml test result: Tests: 1, Errors: 0, Failures: 0, Skipped: 0
+[INFO] 	
+[INFO] ====================================================================================
+[INFO]  > Tests:   	1
+[INFO]  > Errors:  	0
+[INFO]  > Failures:	0
+[INFO]  > Skipped: 	0
+[INFO] ====================================================================================
+[INFO] 
+[INFO] >>> munit:3.3.0:coverage-report (test) > [munit]test @ cortexassist >>>
+[INFO] 
+[INFO] --- mule:4.3.0:validate (default-validate) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:initialize (default-initialize) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:generate-sources (default-generate-sources) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:process-sources (default-process-sources) @ cortexassist ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cortexassist ---
+[INFO] Copying 7 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- mule:4.3.0:process-resources (default-process-resources) @ cortexassist ---
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ cortexassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- mule:4.3.0:compile (default-compile) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:process-classes (default-process-classes) @ cortexassist ---
+[INFO] 
+[INFO] --- mule:4.3.0:generate-test-sources (default-generate-test-sources) @ cortexassist ---
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cortexassist ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- mule:4.3.0:generate-test-resources (default-generate-test-resources) @ cortexassist ---
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ cortexassist ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- mule:4.3.0:test-compile (default-test-compile) @ cortexassist ---
+[INFO] 
+[INFO] --- surefire:3.1.2:test (default-test) @ cortexassist ---
+[INFO] Skipping execution of surefire because it has already been run for this configuration
+[INFO] 
+[INFO] --- munit:3.3.0:test (test) @ cortexassist ---
+[INFO] Skipping execution of munit because it has already been run
+[INFO] 
+[INFO] <<< munit:3.3.0:coverage-report (test) < [munit]test @ cortexassist <<<
+[INFO] 
+[INFO] 
+[INFO] --- munit:3.3.0:coverage-report (test) @ cortexassist ---
+[INFO] Generating: HTML report...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  33.041 s
+[INFO] Finished at: 2025-06-27T04:15:30+05:30
+[INFO] ------------------------------------------------------------------------
